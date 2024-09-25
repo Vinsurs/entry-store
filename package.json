@@ -1,0 +1,43 @@
+{
+  "name": "entry-store",
+  "version": "1.0.0",
+  "description": "A library for store search history entry data",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinsurs/entry-store.git"
+  },
+  "main": "dist/entry-store.umd.js",
+  "module": "dist/entry-store.es.js",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/entry-store.umd.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/entry-store.es.js",
+      "require": "./dist/entry-store.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "vite build && tsc",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "history",
+    "entry-store",
+    "entry",
+    "store"
+  ],
+  "author": "vinsurs <2407232109@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5"
+  },
+  "dependencies": {
+    "naive-storage": "^1.0.1"
+  }
+}
